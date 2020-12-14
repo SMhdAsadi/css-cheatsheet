@@ -1,0 +1,94 @@
+@keyframes card-hover
+{
+    25%  { transform: rotate(1deg);}
+    50%  { transform: rotate(0deg);}
+    75%  { transform: rotate(-1deg);}
+    100% { transform: rotate(0deg);}
+}
+
+body
+{
+    margin: 0;
+    background-color: #CFD8DC;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 0 1%;
+}
+
+.title
+{
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2em;
+}
+
+small
+{
+    font-size: small;
+}
+
+.heading
+{
+    font-family: cursive;
+    text-align: center;
+    color: #f1c40f;
+}
+
+.card
+{
+    margin: 0 5px 1.5em 5px;
+    display: inline-block;
+    max-width: auto;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 2px 2px 10px 0px rgb(0, 0, 0.1);
+    background-color: #16a085;
+    border-radius: 10px;
+}
+
+.card:hover
+{
+    animation-name: card-hover;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+p
+{
+    margin: 0;
+    padding: 0 5px;
+    color: #FFEBCF;
+    border-radius: 5px;
+    font-family: monospace;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+p:active
+{
+    font-size: 1.1rem;
+}
+
+p:hover
+{
+    transform: scale(1.05) translateY(-2px);
+    background-color: #70cebb;
+    color: black;
+}
+
+p:hover .detail
+{
+    color: #c23616;
+}
+
+.detail
+{
+    font-family: cursive;
+    color: #0D0221;
+    transition: color .5s;
+}
