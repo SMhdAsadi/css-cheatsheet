@@ -69,11 +69,6 @@ small
     transition: all .5s;
 }
 
-.card p:active
-{
-    font-size: 1.1rem;
-}
-
 .card p:hover
 {
     transform: scale(1.05) translateY(-2px);
