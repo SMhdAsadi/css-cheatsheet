@@ -58,7 +58,7 @@ small
     animation-timing-function: ease-out;
 }
 
-p
+.card p
 {
     margin: 0;
     padding: 0 5px;
@@ -69,19 +69,19 @@ p
     transition: all .5s;
 }
 
-p:active
+.card p:active
 {
     font-size: 1.1rem;
 }
 
-p:hover
+.card p:hover
 {
     transform: scale(1.05) translateY(-2px);
     background-color: #70cebb;
     color: black;
 }
 
-p:hover .detail
+.card p:hover .detail
 {
     color: #c23616;
 }
@@ -91,4 +91,17 @@ p:hover .detail
     font-family: cursive;
     color: #0D0221;
     transition: color .5s;
+}
+
+footer
+{
+    margin: 20px;
+    border-top: 3px solid rgba(100, 100, 100, .4);
+}
+
+footer p
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0D0221;
 }
